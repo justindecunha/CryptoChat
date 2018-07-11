@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CryptoChat</string>
+    <string name="settings_menu_text">Settings</string>
+    <string name="about_menu_text">About</string>
+</resources>
