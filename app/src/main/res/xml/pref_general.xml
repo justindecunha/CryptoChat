@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="display_name"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="encryption_enabled"
+        android:summary="Encrypt/decrypt all messages with the password below"
+        android:title="@string/pref_title_encryption" />
+
+    <EditTextPreference
+        android:defaultValue="WorldsBestDefaultPassword"
+        android:dependency="encryption_enabled"
+        android:inputType="textVisiblePassword"
+        android:key="encryption_password"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_password" />
+
+</PreferenceScreen>

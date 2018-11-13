@@ -2,16 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:weightSum="1">
+    tools:context=".activities.MainActivity">
 
     <ListView
-        android:stackFromBottom="true"
         android:id="@+id/lvMessages"
+        android:layout_weight="0.83"
         android:layout_width="match_parent"
         android:layout_height="190dp"
-        android:layout_weight="0.83" />
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4.0sp"
+        android:stackFromBottom="true" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -19,26 +20,27 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
             android:id="@+id/etMessage"
-            android:layout_weight="1" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/message_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxLength="256"
+            android:paddingTop="5dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvCharCount" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.03"
+            android:background="@color/background_floating_material_dark"
+            android:onClick="send"
+            android:text="@string/send_button_text"
+            android:textColor="@color/background_material_light" />
+
     </LinearLayout>
-
-    <Button
-        android:text="Send Message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSend"
-        android:layout_weight="0.03"
-        android:onClick="send" />
 
 
 </LinearLayout>

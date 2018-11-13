@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="advanced_user"
+        android:title="I know what I'm doing" />
+
+    <EditTextPreference
+        android:defaultValue="224.168.5.200"
+        android:dependency="advanced_user"
+        android:inputType="numberDecimal"
+        android:key="ip_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="IP Address" />
+
+
+    <EditTextPreference
+        android:defaultValue="40556"
+        android:dependency="advanced_user"
+        android:inputType="number"
+        android:key="port"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Port" />
+</PreferenceScreen>
