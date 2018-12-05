@@ -17,7 +17,7 @@ More advanced users can also compile and install the apk from the sources provid
 
 ## Demo
 
-[![](http://img.youtube.com/vi/8kR8F2K20U0/0.jpg)](http://www.youtube.com/watch?v=8kR8F2K20U0 "CryptoChat")
+[![](http://img.youtube.com/vi/8kR8F2K20U0/0.jpg)](https://www.youtube.com/watch?v=ztyPJMW8Jq8 "CryptoChat")
 
 ## Features
 
