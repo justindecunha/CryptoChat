@@ -9,7 +9,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 /**
- * This class handles the cryptography. Uses very simple asymmetric cryptography, and users
+ * This class handles the cryptography. Uses very simple symmetric cryptography, and users
  * must share the password in order to read each others messages.
  */
 public class SimpleCrypt {
