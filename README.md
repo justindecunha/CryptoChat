@@ -1,6 +1,6 @@
 # CryptoChat
 
-CryptoChat is a serverless LAN chat app with support for encryption. It was designed to showcase decentralized [multicast group communication](https://en.wikipedia.org/wiki/Multicast), in which each individual client broadcasts messages to the group as a whole, rather than relying on client-server communication.
+CryptoChat is a LAN chat app with support for encryption. It was designed to showcase decentralized [multicast group communication](https://en.wikipedia.org/wiki/Multicast), in which each individual client broadcasts messages to the group as a whole, rather than relying on client-server communication.
 
 ## Getting Started
 
